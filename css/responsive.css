@@ -1,0 +1,56 @@
+@media screen and (max-width: 561px) {
+/*HEADER*/
+    h1{
+      font-size: 3em;
+      text-align: center;
+    }
+
+    h3{
+      font-size: 2em;
+      text-align: center;
+    }
+
+    header{
+      text-align: center;
+      justify-content: center;
+    }
+
+    .logo{
+      order:0;
+    }
+
+    .header-text{
+      order:1;
+      width: 100%;
+    }
+
+/*SEPARATER-BAR*/
+    .separater-bar{
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+/*MAIN IMAGE*/
+}
+
+@media screen and (max-width: 800px) {
+/*PROJECTS*/
+  h4{
+    text-align: center;
+  }
+
+  .project{
+    width:100%;
+    text-align: center;
+  }
+
+  h2, p{
+    margin:0;
+  }
+  
+  .proj_2, .proj_3{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+}

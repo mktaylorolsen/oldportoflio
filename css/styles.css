@@ -1,0 +1,181 @@
+.flex-box {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+body{
+  font-family: 'Work Sans', sans-serif;
+  color: #2d3c49;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+
+/*HEADER*/
+header{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+h1{
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+ul{
+  width: 100%;
+  list-style: none;
+  margin-top: 40px;
+  padding: 0;
+}
+
+li{
+  display: inline;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 10px;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #f841bf;
+}
+
+a:active{
+  color: lightgrey;
+}
+
+.logo{
+  width:150px;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3{
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/*BLURB*/
+.blurb-text{
+  text-align: center;
+  padding-top: 40px;
+  width: 100%;
+}
+
+/*MAIN IMAGE*/
+.main_img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+
+
+
+/*PROJECTS*/
+.Project_Sect{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h4{
+  color:#7d97ad;
+  width:100%;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+h2{
+  text-transform: uppercase;
+  font-size: 3em;
+}
+
+.project{
+  width: 32%;
+}
+
+.proj_2{
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+p{
+  font-size: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+
+/*ABOUT*/
+
+.line{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  max-width: 100%;
+}
+
+.bar{
+  height: 30px;
+  margin-top: 10px;
+  line-height: 200%;
+}
+
+.percentage{
+  background-color: #f841bf;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: white;
+}
+
+.fill{
+  background-color: lightgrey;
+  text-align: right;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.seventy{
+  width: 70%;
+}
+
+.thirty{
+  width: 30%;
+}
+
+
+
+/*FOOTER*/
+footer{
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  background-color: lightgrey;
+}
+
+.footerText{
+  font-size: 1em;
+}
