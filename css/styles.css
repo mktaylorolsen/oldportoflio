@@ -62,7 +62,7 @@ ul{
   padding: 0;
 }
 
-li{
+.navLink{
   display: inline;
   font-size: 1.25em;
   margin: 0;
@@ -129,10 +129,13 @@ h4{
 }
 
 h2{
-  text-transform: uppercase;
-  font-size: 3em;
+  font-size: 1.25em;
+  text-align: center;
 }
-
+.projDes{
+  text-align: center;
+  font-size: 1em;
+}
 .project{
   width: 32%;
   height: auto;
@@ -168,19 +171,16 @@ p{
   flex-wrap: wrap;
   background-color: #edfffc;
 }
-
-.portrait{
-  width:40%;
+.about{
+  width: 50%;
+  font-size: 1em;
+  text-align: right;
 }
-
-#about{
-  width: 60%;
-  font-size: 10px;
-  margin-top: 0;
-  margin-left: 5px;
-  margin-right: 5px;
+.skills{
+  width:50%;
+  text-align: center;
+  font-size: 1.5em;
 }
-
 
 /*FOOTER*/
 footer{
@@ -194,4 +194,10 @@ footer{
 
 .footerText{
   font-size: 1em;
+}
+.footerLink{
+  display: inline;
+  font-size: 1.25em;
+  margin: 0;
+  padding: 10px;
 }

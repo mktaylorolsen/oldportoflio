@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond|IM+Fell+Double+Pica" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -22,10 +23,10 @@
           <!-- NAVIGATION -->
           <nav class="navBar">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li class="navLink"><a href="#home">Home</a></li>
+              <li class="navLink"><a href="#projects">Projects</a></li>
+              <li class="navLink"><a href="#about">About</a></li>
+              <li class="navLink"><a href="#contact">Contact</a></li>
             </ul>
           </nav>​
         </div>
@@ -49,7 +50,7 @@
 
       <!-- BLURB -->
         <div class="blurb-text" id = "projects">
-          <p>Projects</p>
+          <p>Featured Projects</p>
         </div>
 
 
@@ -57,16 +58,24 @@
       <!-- JS TO DO Add a hover effect with the information of each project and add the laptop photo for each web page -->
       <section class="Project_Sect">
         <div class="project">
+          <h2 class = 'projTitle'>Matching Game</h2>
           <img src="img/matching_game.gif" class="proj_pic" alt="Matching Game">
+          <p class = 'projDes'>HTML5, CSS3, jQuery</p>
         </div>
         <div class="project proj_2">
+          <h2 class = 'projTitle'>Pixel Art Maker</h2>
           <img src="img/pixel_art_maker.gif" class="proj_pic" alt="Pixel Art Maker">
+          <p class = 'projDes'>HTML5, CSS3, Javascript</p>
         </div>
         <div class="project proj_3">
-          <img src="img/project_3.jpg" class="proj_pic" alt="Project 3 Photo">
+          <h2 class = 'projTitle'>Design Portfolio</h2>
+          <img src="img/mkolsendesigns.gif" class="proj_pic" alt="MK Olsen Designs">
+          <p class = 'projDes'>Custom updates to Squarespace theme</p>
         </div>
         <div class="project">
-          <img src="#" class="proj_pic" alt="Project 3 Photo">
+          <h2 class = 'projTitle'>LTC & Associates</h2>
+          <img src="img/ltcarch.gif" class="proj_pic" alt="Project 3 Photo">
+          <p class = 'projDes'>HTML5, CSS3, vanilla JS, jQuery</p>
         </div>
         <div class="project proj_2">
           <img src="#"  class="proj_pic" alt="Project 3 Photo">
@@ -79,14 +88,31 @@
 
       <div class = 'aboutSection'>
         <p>About Me</p>
-        <!-- PHOTO -->
-        <img src = '#' class = 'portrait'>
       <!-- BLURB -->
-        <div class="blurb-text" id = 'about'>
+        <div class="about">
           <p>My previous career as an apparel Product Developer provided me with expertise in Adobe Creative Suite, Visual Communication and Color Design. I built on this foundation by completing Harvard's CS50x, FreeCodeCamp's Front End Developer Certificate and Udacity's Front End Web Developer Nanodegree. I utilize my prior professional skills and project-based programming knowledge to create beautiful, responsive and interactive websites. </p>
         </div>
-      </div>
-      <!-- SKILLS -->
+        <!-- SKILLS -->
+        <div class = 'skills'>
+          <ul class = 'skillList'>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+            <li>Git</li>
+            <li>Github</li>
+            <li>Terminal</li>
+            <li>Responsive Design</li>
+            <li>Cross-browser Adaptability</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>InDesign</li>
+            <li>eCommerce</li>
+            <li>Graphic Design</li>
+          </ul>
+        </div>
+    </div>
 
     <!-- CONTACT -->
 
@@ -94,9 +120,9 @@
     <!-- FOOTER -->
     <footer>
       <ul>
-        <li><a href = "https://www.linkedin.com/in/mk-olsen/"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href = "https://github.com/mktaylorolsen"><i class="fab fa-github"></i></a></li>
-        <li><a href = "https://www.instagram.com/mk_o1sen/?hl=en"><i class="fab fa-instagram"></i></a></li>
+        <li class="footerLink"><a href = "https://www.linkedin.com/in/mk-olsen/"><i class="fab fa-linkedin"></i></a></li>
+        <li class="footerLink"><a href = "https://github.com/mktaylorolsen"><i class="fab fa-github"></i></a></li>
+        <li class="footerLink"><a href = "https://www.instagram.com/mk_o1sen/?hl=en"><i class="fab fa-instagram"></i></a></li>
       </ul>
       <p class = "footerText">All Rights Reserved. <span><i class="far fa-copyright"></i></span> 2018 Mary Kathryn Olsen.</p>
     </footer>
