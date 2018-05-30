@@ -6,127 +6,145 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="webfontkit/stylesheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+<!-- or -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|IM+Fell+Double+Pica" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   </head>
 
 
   <body>
-    <div class = "flex-box">
-
+    <div class = 'container-fluid'>
       <!-- HEADER -->
-      <header class="header">
+      <div class="header" id = 'home'>
         <img src="https://rawgit.com/mktaylorolsen/d3809fd17d372d35518da77f52b855de/raw/f64903bf89d304cfe14d6cde312c7eb6c5daebbf/logo.svg" alt="Olsen Logo" class="logo">
-        <div class="header-text">
-          <!-- NAVIGATION -->
-          <nav class="navBar">
-            <ul>
-              <li class="navLink"><a href="#home">Home</a></li>
-              <li class="navLink"><a href="#projects">Projects</a></li>
-              <li class="navLink"><a href="#about">About</a></li>
-              <li class="navLink"><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>​
-        </div>
-      </header>
 
-
-      <div class = 'intro'>
-        <!-- BLURB -->
-          <div class="blurb-text" id ="home">
-            <p>I'm MK, a Front-End Web Developer.</p>
-          </div>
-          <div class = "opacitySquare">
-          </div>
-        <!-- MAIN IMAGE -->
-        <picture class="main_img">
-          <source media="(min-width: 1000px)" srcset="img/main_img_comp_sm.png">
-          <source media="(min-width: 500px)" srcset="img/main_img_comp_sm.png">
-          <img src="img/main_img_comp_xs.png" alt="image of code">
-        </picture>
+        <!-- NAVIGATION -->
+        <div class= 'navBar'>
+          <div class = 'mobileIcon'><i class="fas fa-bars"></i></div>
+          <ul class="nav justify-content-center topmenu">
+            <li class="nav-item menuItem"><a href="#home" class="nav-link navLink">Home</a></li>
+            <li class="nav-item menuItem"><a href="#projects" class="nav-link navLink">Projects</a></li>
+            <li class="nav-item menuItem"><a href="#about" class="nav-link navLink">About</a></li>
+            <li class="nav-item menuItem"><a href="MaryKathrynOlsen_Resume.pdf" download class="nav-link navLink">Resume</a></li>
+            <li class="nav-item menuItem"><a href="mailto:marykathrynolsen@gmail.com" class="nav-link navLink">Contact</a></li>
+          </ul>
+        </div>​
       </div>
 
-      <!-- BLURB -->
-        <div class="blurb-text" id = "projects">
-          <p>Featured Projects</p>
-        </div>
-
+      <div class = 'intro'>
+        <!-- MAIN IMAGE -->
+          <img class="img-fluid mainImg" src="img/main_img.png">
+      </div>
 
       <!-- PROJECTS -->
       <!-- JS TO DO Add a hover effect with the information of each project and add the laptop photo for each web page -->
-      <section class="Project_Sect">
+      <div class="justify-content-center Project_Sect">
         <div class="project">
-          <h2 class = 'projTitle'>Matching Game</h2>
-          <img src="img/matching_game.gif" class="proj_pic" alt="Matching Game">
-          <p class = 'projDes'>HTML5, CSS3, jQuery</p>
+          <img src="img/matching_game.gif" class="card-img-top proj_pic" alt="Matching Game">
+            <div class = 'projBody'>
+              <h5 class = 'projTitle'>Matching Game</h5>
+              <h6 class = 'projSubtitle'>jQuery App</h5>
+              <p class = ' projDes'>App game with the objective of matching cards into pairs. User wins the game by accurately matching all of the pairs. Part of Udacity's Front End Web Developmet curriculum.</p>
+              <a href="https://github.com/mktaylorolsen/UdacityMatchingGame" class="btn btn-secondary">View</a>
+            </div>
         </div>
-        <div class="project proj_2">
-          <h2 class = 'projTitle'>Pixel Art Maker</h2>
-          <img src="img/pixel_art_maker.gif" class="proj_pic" alt="Pixel Art Maker">
-          <p class = 'projDes'>HTML5, CSS3, Javascript</p>
-        </div>
-        <div class="project proj_3">
-          <h2 class = 'projTitle'>Design Portfolio</h2>
-          <img src="img/mkolsendesigns.gif" class="proj_pic" alt="MK Olsen Designs">
-          <p class = 'projDes'>Custom updates to Squarespace theme</p>
-        </div>
+
         <div class="project">
-          <h2 class = 'projTitle'>LTC & Associates</h2>
-          <img src="img/ltcarch.gif" class="proj_pic" alt="Project 3 Photo">
-          <p class = 'projDes'>HTML5, CSS3, vanilla JS, jQuery</p>
+          <img src="img/pixel_art_maker.gif" class="card-img-top proj_pic" alt="Pixel Art Maker">
+            <div class = 'projBody'>
+              <h5 class = 'projTitle'>Pixel Art Maker</h5>
+              <h6 class = 'projSubtitle'>Javascript App</h5>
+              <p class = 'projDes'>App that allows user to create grid art with custom dimensions and colors. Part of Udacity's Front End Web Developmet curriculum.</p>
+              <a href="https://github.com/mktaylorolsen/PixelArtMakerLab" class="btn btn-secondary">View</a>
+            </div>
         </div>
-        <div class="project proj_2">
-          <img src="#"  class="proj_pic" alt="Project 3 Photo">
+
+        <div class="project">
+          <img src="img/mkolsendesigns.gif" class="card-img-top proj_pic" alt="MK Olsen Designs">
+            <div class = 'projBody'>
+              <h5 class = 'projTitle'>MK Olsen Designs</h5>
+              <h6 class = 'projSubtitle'>Design Portfolio</h5>
+              <p class = 'projDes'>Custom updates to Squarespace theme with project displays. Full branding and logo design.</p>
+              <a href="https://mkolsendesigns.squarespace.com/" class="btn btn-secondary">View</a>
+            </div>
         </div>
-        <div class="project proj_3">
-          <img src="#"  class="proj_pic" alt="Project 3 Photo">
+
+        <div class="project">
+          <img src="img/ltcarch.gif" class="card-img-top proj_pic" alt="LTC and Associates">
+            <div class = 'projBody'>
+              <h5 class = 'projTitle'>LTC & Associates</h5>
+              <h6 class = 'projSubtitle'>Business Website</h5>
+              <p class = 'projDes'>Interactive website displaying services, projects and people. Scrollable animations, easy to read descriptions, clear and concise design.</p>
+              <a href="https://github.com/mktaylorolsen/ltcarch" class="btn btn-secondary">View</a>
+            </div>
         </div>
-      </section>
+      </div>
 
 
       <div class = 'aboutSection'>
-        <p>About Me</p>
-      <!-- BLURB -->
-        <div class="about">
-          <p>My previous career as an apparel Product Developer provided me with expertise in Adobe Creative Suite, Visual Communication and Color Design. I built on this foundation by completing Harvard's CS50x, FreeCodeCamp's Front End Developer Certificate and Udacity's Front End Web Developer Nanodegree. I utilize my prior professional skills and project-based programming knowledge to create beautiful, responsive and interactive websites. </p>
+        <div class = 'imagecont'>
+          <img class = 'img-fluid aboutimage' src = 'img/aboutimage.png'>
         </div>
-        <!-- SKILLS -->
-        <div class = 'skills'>
-          <ul class = 'skillList'>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Javascript</li>
-            <li>jQuery</li>
-            <li>Bootstrap</li>
-            <li>Git</li>
-            <li>Github</li>
-            <li>Terminal</li>
-            <li>Responsive Design</li>
-            <li>Cross-browser Adaptability</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>InDesign</li>
-            <li>eCommerce</li>
-            <li>Graphic Design</li>
-          </ul>
+        <div class = "about">
+          <h3>Hi, I'm MK!</h3>
+          <div class = 'blurb'>
+            <p>My previous career provided me with expertise in Adobe Creative Suite, Visual Communication and Creative Collaboration. I built on this foundation by completing Harvard's CS50x, FreeCodeCamp's Front End Developer Certificate and Udacity's Front End Web Developer Nanodegree. I love to create beautiful, responsive and interactive websites. </p>
+          </div>
+            <!-- SKILLS -->
+          <div class = 'questAns'>
+            <div class = 'cell'>
+              <div class = 'question'>My favorite place is ...</div>
+              <div class = 'answer'>mallorca, spain</div>
+            </div>
+            <div class = 'cell'>
+              <div class = 'question'>I can usually be found ...</div>
+              <div class = 'answer'>climbing with my husband</div>
+            </div>
+            <div class = 'cell'>
+              <div class = 'question'>I love ...</div>
+              <div class = 'answer'>mac and cheese</div>
+            </div>
+            <div class = 'cell'>
+              <div class = 'question'>I am certified in ...</div>
+              <div class = 'answer'>avalanche safety</div>
+            </div>
+            <div class = 'cell'>
+              <div class = 'question'>My guilty pleasure is ...</div>
+              <div class = 'answer'>sewing</div>
+            </div>
+            <div class = 'cell'>
+              <div class = 'question'>I am passionate about ...</div>
+              <div class = 'answer'>the environment and outdoor recreation</div>
+            </div>
+          </div>
+          <h4 class = 'skills'>Look What I Can Do</h4>
+          <p>HTML5, CSS3, Javascript, jQuery, Bootstrap, Wireframing, Illustrator, Photoshop, InDesign, Git, Github, Terminal</p>
         </div>
-    </div>
-
-    <!-- CONTACT -->
-
+      </div>
 
     <!-- FOOTER -->
     <footer>
-      <ul>
-        <li class="footerLink"><a href = "https://www.linkedin.com/in/mk-olsen/"><i class="fab fa-linkedin"></i></a></li>
-        <li class="footerLink"><a href = "https://github.com/mktaylorolsen"><i class="fab fa-github"></i></a></li>
-        <li class="footerLink"><a href = "https://www.instagram.com/mk_o1sen/?hl=en"><i class="fab fa-instagram"></i></a></li>
+      <img src="https://rawgit.com/mktaylorolsen/d3809fd17d372d35518da77f52b855de/raw/f64903bf89d304cfe14d6cde312c7eb6c5daebbf/logo.svg" alt="Olsen Logo" class="footerImg">
+      <ul class="nav row justify-content-center footerMenu">
+          <li class="nav-item footerItem"><a href="#home" class="nav-link navLink">Home</a></li>
+          <li class="nav-item footerItem"><a href="#projects" class="nav-link navLink">Projects</a></li>
+          <li class="nav-item footerItem"><a href="#about" class="nav-link navLink">About</a></li>
+          <li class="nav-item footerItem"><a href="MaryKathrynOlsen_Resume.pdf" download class="nav-link navLink">Resume</a></li>
+          <li class="nav-item footerItem"><a href="mailto:marykathrynolsen@gmail.com" class="nav-link navLink">Contact</a></li>
       </ul>
-      <p class = "footerText">All Rights Reserved. <span><i class="far fa-copyright"></i></span> 2018 Mary Kathryn Olsen.</p>
+      <ul class="nav iconList justify-content-center">
+        <li class="nav-item footerLink"><a class="nav-link footernavlink" href = "https://www.linkedin.com/in/mk-olsen/"><i class="fab fa-linkedin"></i></a></li>
+        <li class="nav-item footerLink"><a class="nav-link footernavlink" href = "https://github.com/mktaylorolsen"><i class="fab fa-github"></i></a></li>
+        <li class="nav-item footerLink"><a class="nav-link footernavlink" href = "https://www.instagram.com/mk_o1sen/?hl=en"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+      <p class = "footerText">All Rights Reserved. <span><i class="far fa-copyright"></i></span> 2018 Mary Kathryn Olsen</p>
     </footer>
-
     </div>
-  </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="app.js"></script>
+</body>
 </html>
